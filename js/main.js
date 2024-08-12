@@ -79,45 +79,61 @@ function loadSinglePost() {
 
 // JS for other pages
 
-(function ($) {
-
+(function () {
     'use strict';
-    
-        $('a.smoth-scroll').on('click', function (e) {
-            var anchor = $(this);
-            $('html, body').stop().animate({
-                scrollTop: $(anchor.attr('href')).offset().top - 50
-            }, 1000);
+    // Smooth scroll for links with class 'smoth-scroll'
+    document.querySelectorAll('a.smoth-scroll').forEach(function(anchor) {
+        anchor.addEventListener('click', function (e) {
             e.preventDefault();
-        });
-    
-        $('.navbar-collapse .navbar-nav a').on('click', function () {
-            $('.navbar-toggler:visible').click();
-        });
-    
-        $(window).on('scroll', function () {
-            if ($(window).scrollTop() > 70) {
-                $('.site-navigation,.trans-navigation').addClass('header-white');
-            } else {
-                $('.site-navigation,.trans-navigation').removeClass('header-white');
-            }
-    
-        });
-    
-    })(window.jQuery);
-    
-
-    // For smooth scroll on link click
-    $(function () {
-        "use strict";
-        $('.scroll-link').bind('click', function (event) {
-            var $anchor = $(this);
-            $('html, body').stop().animate({
-                scrollTop: $($anchor.attr('href')).offset().top - 68
-            }, 0);
-            event.preventDefault();
+            const targetElement = document.querySelector(anchor.getAttribute('href'));
+            window.scrollTo({
+                top: targetElement.offsetTop - 50,
+                behavior: 'smooth'
+            });
         });
     });
+
+    // Collapse navbar on link click for visible navbar toggler
+    document.querySelectorAll('.navbar-collapse .navbar-nav a').forEach(function(link) {
+        link.addEventListener('click', function () {
+            const navbarToggler = document.querySelector('.navbar-toggler:visible');
+            if (navbarToggler) {
+                navbarToggler.click();
+            }
+        });
+    });
+
+    // Change header color on scroll
+    window.addEventListener('scroll', function () {
+        if (window.scrollY > 70) {
+            document.querySelectorAll('.site-navigation, .trans-navigation').forEach(function(nav) {
+                nav.classList.add('header-white');
+            });
+        } else {
+            document.querySelectorAll('.site-navigation, .trans-navigation').forEach(function(nav) {
+                nav.classList.remove('header-white');
+            });
+        }
+    });
+
+})();
+
+
+// For smooth scroll on link click with class 'scroll-link'
+document.addEventListener('DOMContentLoaded', function() {
+    "use strict";
+    document.querySelectorAll('.scroll-link').forEach(function(anchor) {
+        anchor.addEventListener('click', function (event) {
+            event.preventDefault();
+            const targetElement = document.querySelector(anchor.getAttribute('href'));
+            window.scrollTo({
+                top: targetElement.offsetTop - 68,
+                behavior: 'smooth'
+            });
+        });
+    });
+});
+
     
     
     // Function to check viewport width and move the div after a sibling
