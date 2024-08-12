@@ -8,7 +8,7 @@
     <!-- bootstrap.min css -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
-<body>
+<body class="blog-page">
     <div class="container-fluid header-container bg-blue p-0" id="header">
         <div class="container">
             <div class="header navigation-bar d-flex justify-content-between align-items-center">
@@ -24,26 +24,39 @@
         </div>
     </div>
 
-    <h1>Blog</h1>
-    <div>
-        <label for="category">Filter by Category:</label>
-        <!-- <select id="category" onchange="filterPosts()">
-            <option value="all">All</option>
-            <option value="category1">Category 1</option>
-            <option value="category2">Category 2</option>
-        </select> -->
-        
-        <div id="categories">
-            <div class="category-bubble active-category" data-category="all">All</div>
-            <div class="category-bubble" data-category="category1">Category 1</div>
-            <div class="category-bubble" data-category="category2">Category 2</div>
-            <div class="category-bubble" data-category="category3">Category 3</div>
-            <div class="category-bubble" data-category="category4">Category 4</div>
+    <!-- Banner start from here -->
+    <div class="container-fluid banner bg-light py-5 px-5">
+        <div class="container">
+            <div class="col-lg-7 col-sm-10 col-xs-10 mx-auto">
+                <div class="my-5 text-center">
+                    <h2 class="mb-2">Blog Categories</h2>
+                    <p>Blog categories help organize your content, making it easier for readers to find related posts and enhancing the overall user experience on your site.</p>
+                </div>
+            </div>
         </div>
-
     </div>
-    <div id="posts"></div>
 
+    <!-- Blog content start from here -->
+    <div class="container-fluid bg-light pt-5 pb-0 px-0">
+        <div class="container">
+            <div class="blog-content">
+                <h1 class="section-heading text-center text-dark mt-4 mb-5">Categories</h1>
+                
+                <div class="categories text-center mb-5" id="categories">
+                    <div class="category-bubble active-category" data-category="all">All</div>
+                    <div class="category-bubble" data-category="category1">Category 1</div>
+                    <div class="category-bubble" data-category="category2">Category 2</div>
+                    <div class="category-bubble" data-category="category3">Category 3</div>
+                    <div class="category-bubble" data-category="category4">Category 4</div>
+                </div>
+
+            </div>
+            <div class="row" id="posts"></div>
+        </div>
+    </div>
+
+    <!-- <h1>Blog</h1> -->
+    
     <?php
         $postFiles = array_values(array_diff(scandir('posts'), array('..', '.')));
         echo '<script>';

@@ -40,6 +40,28 @@ function loadPosts(category) {
     // List of post files
     // const postFiles = ['post1.html', 'post2.html', 'post3.html'];
 
+    // postFiles.forEach(file => {
+    //     fetch(`posts/${file}`)
+    //         .then(response => response.text())
+    //         .then(data => {
+    //             const parser = new DOMParser();
+    //             const doc = parser.parseFromString(data, 'text/html');
+    //             const postElement = doc.querySelector('.post');
+    //             // if (category === 'all' || postElement.dataset.category === category) {
+    //             //     const title = postElement.querySelector('h5').outerHTML;
+    //             //     const link = postElement.querySelector('a').outerHTML;
+    //             //     postsContainer.innerHTML += `<div class="post">${title}${link}</div>`;
+    //             // }
+    //             if (category === 'all' || postElement.dataset.category === category) {
+    //                 const post = postElement.querySelector('.main-blog-card').outerHTML;
+    //                 // const link = postElement.querySelector('a').outerHTML;
+    //                 postsContainer.innerHTML += `<div class="post-parent">${post}</div>`;
+    //             }
+    //         })
+    //         .catch(error => console.error('Error fetching the post:', error));
+    // });
+
+
     postFiles.forEach(file => {
         fetch(`posts/${file}`)
             .then(response => response.text())
@@ -47,15 +69,43 @@ function loadPosts(category) {
                 const parser = new DOMParser();
                 const doc = parser.parseFromString(data, 'text/html');
                 const postElement = doc.querySelector('.post');
-                if (category === 'all' || postElement.dataset.category === category) {
-                    const title = postElement.querySelector('h2').outerHTML;
-                    const link = postElement.querySelector('a').outerHTML;
-                    postsContainer.innerHTML += `<div class="post">${title}${link}</div>`;
+                if (postElement && (category === 'all' || postElement.dataset.category === category)) {
+                    const mainBlogCard = postElement.querySelector('.main-blog-card');
+                    if (mainBlogCard) {
+                        postsContainer.innerHTML += `<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">${mainBlogCard.outerHTML}</div>`;
+                    } else {
+                        console.error('Error: .main-blog-card element not found in the post!');
+                    }
+                } else {
+                    console.error('Error: .post element not found or category mismatch!');
                 }
             })
-            .catch(error => console.error('Error fetching the post:', error));
+        .catch(error => console.error('Error fetching the post:', error));
     });
+    
+
+
 }
+
+// function loadSinglePost() {
+//     const params = new URLSearchParams(window.location.search);
+//     const postFile = params.get('post');
+
+//     if (postFile) {
+//         fetch(`posts/${postFile}`)
+//             .then(response => response.text())
+//             .then(data => {
+//                 const parser = new DOMParser();
+//                 const doc = parser.parseFromString(data, 'text/html');
+//                 const postElement = doc.querySelector('.post');
+//                 const fullContent = postElement.querySelector('.full-content').innerHTML;
+//                 const postContent = document.getElementById('post-content');
+//                 postContent.innerHTML = `<h5>${postElement.querySelector('h5').innerText}</h5>${fullContent}`;
+//             })
+//             .catch(error => console.error('Error fetching the post:', error));
+//     }
+// }
+
 
 function loadSinglePost() {
     const params = new URLSearchParams(window.location.search);
@@ -67,14 +117,24 @@ function loadSinglePost() {
             .then(data => {
                 const parser = new DOMParser();
                 const doc = parser.parseFromString(data, 'text/html');
-                const postElement = doc.querySelector('.post');
-                const fullContent = postElement.querySelector('.full-content').innerHTML;
-                const postContent = document.getElementById('post-content');
-                postContent.innerHTML = `<h2>${postElement.querySelector('h2').innerText}</h2>${fullContent}`;
+                const singlePostData = doc.querySelector('.single-post-data');
+                
+                if (singlePostData) {
+                    const postContent = document.getElementById('post-content');
+                    
+                    // Populate the post-content div with the entire single-post-data content
+                    postContent.innerHTML = singlePostData.outerHTML;
+                    
+                    // Ensure that the postContent (or singlePostData) is visible if it's hidden by default
+                    postContent.style.display = 'block';
+                } else {
+                    console.error('Error: .single-post-data element not found in the fetched data!');
+                }
             })
             .catch(error => console.error('Error fetching the post:', error));
     }
 }
+
 
 
 // JS for other pages

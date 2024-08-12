@@ -7,8 +7,19 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <div id="post-content"></div>
+    
+    <div id="loader" class="d-flex justify-content-center align-items-center" style="display: none; height: 100px;">
+        <div class="spinner-border text-primary" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+    </div>
+
     <a href="blog.php">Back to Blog</a>
+    <div id="post-content" class="single-post">
+        <!-- Post content will be loaded here -->
+    </div>
+
+    
     <script src="js/main.js"></script>
 </body>
 </html>
