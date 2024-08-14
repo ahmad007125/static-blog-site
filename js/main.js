@@ -8,21 +8,26 @@ document.addEventListener('DOMContentLoaded', () => {
     const categoryBubbles = document.querySelectorAll('.category-bubble');
     categoryBubbles.forEach(bubble => {
         bubble.addEventListener('click', () => {
-
-            // Add the 'active' class
-            postsContainer.classList.add('hidden');
+            // Save current scroll position
+            const scrollPos = window.scrollY;
+        
+            // Use opacity instead of visibility to prevent layout shifts
+            postsContainer.style.opacity = '0';
             setTimeout(() => {
-                postsContainer.classList.remove('hidden');
+                postsContainer.style.opacity = '1';
             }, 400);
-
+        
             categoryBubbles.forEach(b => b.classList.remove('active-category'));
             bubble.classList.add('active-category');
-
+        
             setTimeout(() => {
                 loadPosts(bubble.dataset.category);
+        
+                // Restore scroll position
+                window.scrollTo(0, scrollPos);
             }, 200);
-
         });
+        
     });
 
     const postContent = document.getElementById('post-content');
@@ -31,36 +36,11 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 });
 
+
 function loadPosts(category) {
     const postsContainer = document.getElementById('posts');
-
     // Clear the current posts
     postsContainer.innerHTML = '';
-
-    // List of post files
-    // const postFiles = ['post1.html', 'post2.html', 'post3.html'];
-
-    // postFiles.forEach(file => {
-    //     fetch(`posts/${file}`)
-    //         .then(response => response.text())
-    //         .then(data => {
-    //             const parser = new DOMParser();
-    //             const doc = parser.parseFromString(data, 'text/html');
-    //             const postElement = doc.querySelector('.post');
-    //             // if (category === 'all' || postElement.dataset.category === category) {
-    //             //     const title = postElement.querySelector('h5').outerHTML;
-    //             //     const link = postElement.querySelector('a').outerHTML;
-    //             //     postsContainer.innerHTML += `<div class="post">${title}${link}</div>`;
-    //             // }
-    //             if (category === 'all' || postElement.dataset.category === category) {
-    //                 const post = postElement.querySelector('.main-blog-card').outerHTML;
-    //                 // const link = postElement.querySelector('a').outerHTML;
-    //                 postsContainer.innerHTML += `<div class="post-parent">${post}</div>`;
-    //             }
-    //         })
-    //         .catch(error => console.error('Error fetching the post:', error));
-    // });
-
 
     postFiles.forEach(file => {
         fetch(`posts/${file}`)
@@ -77,34 +57,13 @@ function loadPosts(category) {
                         console.error('Error: .main-blog-card element not found in the post!');
                     }
                 } else {
-                    console.error('Error: .post element not found or category mismatch!');
+                    // console.error('Error: .post element not found or category mismatch!');
+                    return false;
                 }
             })
         .catch(error => console.error('Error fetching the post:', error));
     });
-    
-
-
 }
-
-// function loadSinglePost() {
-//     const params = new URLSearchParams(window.location.search);
-//     const postFile = params.get('post');
-
-//     if (postFile) {
-//         fetch(`posts/${postFile}`)
-//             .then(response => response.text())
-//             .then(data => {
-//                 const parser = new DOMParser();
-//                 const doc = parser.parseFromString(data, 'text/html');
-//                 const postElement = doc.querySelector('.post');
-//                 const fullContent = postElement.querySelector('.full-content').innerHTML;
-//                 const postContent = document.getElementById('post-content');
-//                 postContent.innerHTML = `<h5>${postElement.querySelector('h5').innerText}</h5>${fullContent}`;
-//             })
-//             .catch(error => console.error('Error fetching the post:', error));
-//     }
-// }
 
 
 function loadSinglePost() {
@@ -136,9 +95,7 @@ function loadSinglePost() {
 }
 
 
-
 // JS for other pages
-
 (function () {
     'use strict';
     // Smooth scroll for links with class 'smoth-scroll'

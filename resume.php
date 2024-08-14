@@ -11,12 +11,10 @@
     
     <!-- bootstrap.min css -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
-    <!-- Icofont Css -->
-    <!-- <link rel="stylesheet" href="plugins/fontawesome/css/all.css"> -->
-    <!-- animate.css -->
-    <link rel="stylesheet" href="plugins/animate-css/animate.css">
-    <!-- Icofont -->
-    <!-- <link rel="stylesheet" href="plugins/icofont/icofont.css"> -->
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
     <!-- Main Stylesheet -->
     <link rel="stylesheet" href="css/styles.css">
