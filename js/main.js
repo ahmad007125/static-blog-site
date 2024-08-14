@@ -207,7 +207,16 @@ document.addEventListener('DOMContentLoaded', function() {
     };
      
 
-
+    function copyCode() {
+        // Create a temporary textarea element
+        var textarea = document.createElement("textarea");
+        textarea.value = document.querySelector(".code-container code").innerText;
+        document.body.appendChild(textarea);
+        textarea.select();
+        document.execCommand("copy");
+        document.body.removeChild(textarea);
+        alert("Code copied to clipboard!");
+    }
 
 
 

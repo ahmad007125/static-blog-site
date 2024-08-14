@@ -458,3 +458,33 @@ h1, h2, h3, h4, h5, h6 {
 .blog-details-page .banner-heading {
   font-size: 50px;
 }
+.blog-detail-img {
+  aspect-ratio: 16 / 9;
+  border-radius: 12px;
+}
+
+.p-relative {
+  position: relative;
+}
+.p-relative .post_share {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  z-index: 9;
+}
+.p-relative .button-secondary-gray {
+  padding: 8px 12px;
+}
+pre {
+  background-color: #1E1E1E;
+  border: 1px solid #333;
+  padding: 15px;
+  border-radius: 12px;
+  position: relative;
+  overflow-x: auto;
+}
+code {
+  font-family: Consolas, "Courier New", monospace;
+  color: #DCDCAA !important;
+  white-space: pre;
+}
