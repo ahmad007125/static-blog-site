@@ -423,10 +423,18 @@ h1, h2, h3, h4, h5, h6 {
   box-shadow: 0 0 3px 0px rgba(0, 0, 0, .125);
   margin-bottom: 18px;
 }
-.main-blog .card-text {
+.main-blog .card-title {
+  margin-bottom: 14px;
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.main-blog .card-text {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
   overflow: hidden;
   text-overflow: ellipsis;
 }
