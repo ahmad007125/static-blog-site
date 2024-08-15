@@ -97,7 +97,7 @@
               <div class="container resume-container p-0" style="display: flex; padding-right: 0;">
                 <div class="left-side" style="padding: 30px 20px; background-color: #e3f2fd; width: 25%; min-width: 200px;">
                     <div id="imageContainer" class="img" style="width: 100%; height: 200px; overflow: hidden;">
-                      <img id="defaultImage" src="images/profile-basic.jpg" alt="profile img" style="width: 100%; height: 100%; object-fit: cover; object-position: top center; display: none;">
+                      <img id="defaultImage" src="images/profile-basic.jpg" alt="profile img" style="width: 100%; height: 100%; object-fit: cover; object-position: top center; display: none;" alt="loading...">
                     </div>
 
                     <!-- Contact section -->

@@ -33,7 +33,6 @@
     color: white;
     border: 1px solid #59C174;
 }
-@import url('https://fonts.googleapis.com/css?family=Poppins:400,600,700|Rubik:400,600,700');
 
 html, body {
   max-width: 100%;
@@ -132,6 +131,9 @@ h1, h2, h3, h4, h5, h6 {
   }
   .right-side {
     padding: 10px 20px 30px 20px;
+  }
+  .w-75 {
+    width: 100% !important;
   }
 }
 
@@ -484,7 +486,7 @@ pre {
   overflow-x: auto;
 }
 code {
-  font-family: Consolas, "Courier New", monospace;
+  letter-spacing: 0.3;
   color: #DCDCAA !important;
   white-space: pre;
 }
