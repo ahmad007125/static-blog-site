@@ -83,14 +83,14 @@ h1, h2, h3, h4, h5, h6 {
   .section-heading {
     margin: 60px 0 40px !important;
   }
+  .blog-page .section-heading {
+    margin-bottom: 25px !important;
+  }
   h1 {
-    font-size: 20px;
+    font-size: 24px;
   }
   h4 {
     font-size: 16px;
-  }
-  .banner-heading {
-    font-size: 50px !important;
   }
   .centered-nav {
     border-bottom: 1px solid rgba(255, 255, 255, .3);
@@ -113,6 +113,9 @@ h1, h2, h3, h4, h5, h6 {
   .fourth-container, .sixth-container {
     margin-top: 60px !important;
   }
+  .blog-page .section-heading {
+    margin-top: 0 !important;
+  }
 }
 
 @media screen and (max-width: 766px) {
@@ -134,6 +137,29 @@ h1, h2, h3, h4, h5, h6 {
   }
   .w-75 {
     width: 100% !important;
+  }
+  .col-lg-4 .main-blog-card {
+    flex-direction: row;
+    padding: 16px !important;
+  }
+  .blog-page #posts .col-lg-4 {
+    margin-bottom: 18px !important;
+  }
+  .main-blog .card-img-top {
+    width: 120px;
+    height: 120px;
+    margin-right: 12px;
+    margin-bottom: 0 !important;
+  }
+  .main-blog .card-title {
+    margin-bottom: 8px !important;
+  }
+  .main-blog .card-text {
+    margin-bottom: 5px;
+    -webkit-line-clamp: 2 !important;
+  }
+  .main-blog-card .btn-link, .btn-link {
+    font-size: 14px;
   }
 }
 
@@ -465,9 +491,6 @@ h1, h2, h3, h4, h5, h6 {
   height: 41px;
   cursor: pointer;
 }
-.blog-details-page .banner-heading {
-  font-size: 50px;
-}
 .blog-detail-img {
   aspect-ratio: 16 / 9;
   border-radius: 12px;
@@ -497,4 +520,8 @@ code {
   letter-spacing: 0.3;
   color: #DCDCAA !important;
   white-space: pre;
+}
+
+.categories {
+  overflow-x: auto;
 }

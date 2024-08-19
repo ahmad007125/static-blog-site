@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
         
                 // Restore scroll position
                 window.scrollTo(0, scrollPos);
-            }, 200);
+            }, 400);
         });
         
     });

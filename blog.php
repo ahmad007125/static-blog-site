@@ -35,10 +35,10 @@
     </div>
 
     <!-- Banner start from here -->
-    <div class="container-fluid banner bg-light py-5 px-5">
+    <div class="container-fluid banner bg-light py-5 px-sm-5 px-1">
         <div class="container">
-            <div class="col-lg-7 col-sm-10 col-xs-10 mx-auto">
-                <div class="my-5 text-center">
+            <div class="col-lg-7 col-sm-10 col-xs-12 mx-auto">
+                <div class="my-sm-5 my-2 text-center">
                     <h2 class="mb-2">Blog Categories</h2>
                     <p>Blog categories help organize your content, making it easier for readers to find related posts and enhancing the overall user experience on your site.</p>
                 </div>
@@ -50,9 +50,9 @@
     <div class="container-fluid bg-light pt-5 pb-0 px-0">
         <div class="container">
             <div class="blog-content">
-                <h1 class="section-heading text-center text-dark mt-4 mb-4">Categories</h1>
+                <h1 class="section-heading text-center text-dark mt-4 mb-sm-4 mb-3">Categories</h1>
                 
-                <div class="categories text-center mb-5" id="categories">
+                <div class="categories text-center mb-5 text-nowrap" id="categories">
                     <div class="category-bubble active-category" data-category="all">All</div>
                     <div class="category-bubble" data-category="category1">Category 1</div>
                     <div class="category-bubble" data-category="category2">Category 2</div>
