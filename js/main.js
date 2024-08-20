@@ -8,26 +8,20 @@ document.addEventListener('DOMContentLoaded', () => {
     const categoryBubbles = document.querySelectorAll('.category-bubble');
     categoryBubbles.forEach(bubble => {
         bubble.addEventListener('click', () => {
-            // Save current scroll position
-            const scrollPos = window.scrollY;
-        
             // Use opacity instead of visibility to prevent layout shifts
             postsContainer.style.opacity = '0';
+
+            // Set timeout to allow opacity change to apply
             setTimeout(() => {
-                postsContainer.style.opacity = '1';
-            }, 400);
-        
-            categoryBubbles.forEach(b => b.classList.remove('active-category'));
-            bubble.classList.add('active-category');
-        
-            // setTimeout(() => {
+                categoryBubbles.forEach(b => b.classList.remove('active-category'));
+                bubble.classList.add('active-category');
+
                 loadPosts(bubble.dataset.category);
-        
-                // Restore scroll position
-                window.scrollTo(0, scrollPos);
-            // }, 400);
+
+                // Fade posts container back in after content is updated
+                postsContainer.style.opacity = '1';
+            }, 300); // Match this duration with the CSS transition duration
         });
-        
     });
 
     const postContent = document.getElementById('post-content');
@@ -35,6 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
         loadSinglePost();
     }
 });
+
 
 
 function loadPosts(category) {
@@ -93,6 +88,10 @@ function loadSinglePost() {
             .catch(error => console.error('Error fetching the post:', error));
     }
 }
+
+
+
+
 
 
 // JS for other pages

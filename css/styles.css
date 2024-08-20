@@ -1,4 +1,4 @@
-#posts { 
+/* #posts { 
     transition: 200ms ease; 
 }
 #posts.hidden {
@@ -9,6 +9,18 @@
 .posts-container {
   height: auto;
   transition: height 0.4s ease-in-out;
+} */
+
+#posts {
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out; /* Adjust timing as needed */
+  min-height: 496.33px;
+}
+.hidden {
+  opacity: 0;
+}
+.category-bubble {
+  cursor: pointer;
 }
 
 
