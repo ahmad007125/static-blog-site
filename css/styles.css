@@ -371,7 +371,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .call-container {
   position: relative;
-  background: url('../images/call-action-img.jpg');
+  background: url('../images/call-action-img.webp');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

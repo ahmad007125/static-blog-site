@@ -49,7 +49,7 @@
                     <a href="resume.php" class="btn btn-success rounded">Create CV</a>
                 </div>
                 <div class="col-md-6 col-xs-12 img-col">
-                    <img src="images/banner-img.svg" class="img-fluid banner-img" alt="loading...">
+                    <img src="images/banner-img.svg" class="img-fluid banner-img" alt="loading..." width="" height="">
                 </div>
             </div>
         </div>
@@ -223,7 +223,7 @@
                     <a href="resume.php" class="btn btn-success rounded">Create CV</a>
                 </div>
                 <div class="col-sm-6 col-xs-12 img-col">
-                    <img src="images/cv-templates.png" class="img-fluid" alt="loading...">
+                    <img src="images/cv-templates.webp" class="img-fluid" alt="loading..." width="" height="">
                 </div>
             </div>
         </div>
