@@ -437,6 +437,7 @@ h1, h2, h3, h4, h5, h6 {
   border: none;
   transition: 300ms ease;
   position: relative;
+  box-shadow: 0 0 8px 0px rgb(0 0 0 / 5%);
 }
 .main-blog-card {
   border-radius: 20px !important;
@@ -521,7 +522,10 @@ code {
   color: #DCDCAA !important;
   white-space: pre;
 }
-
 .categories {
   overflow-x: auto;
+}
+.btn.btn-link, .btn.btn-link:focus, .btn, .btn:focus {
+  outline: none !important;
+  box-shadow: none !important;
 }

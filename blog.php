@@ -54,10 +54,11 @@
                 
                 <div class="categories text-center mb-5 text-nowrap" id="categories">
                     <div class="category-bubble active-category" data-category="all">All</div>
-                    <div class="category-bubble" data-category="category1">Category 1</div>
-                    <div class="category-bubble" data-category="category2">Category 2</div>
-                    <div class="category-bubble" data-category="category3">Category 3</div>
-                    <div class="category-bubble" data-category="category4">Category 4</div>
+                    <div class="category-bubble" data-category="category1">Technology</div>
+                    <div class="category-bubble" data-category="category2">Web Solutions</div>
+                    <div class="category-bubble" data-category="category3">Graphics</div>
+                    <div class="category-bubble" data-category="category4">Science</div>
+                    <div class="category-bubble" data-category="category5">Tech News</div>
                 </div>
 
             </div>

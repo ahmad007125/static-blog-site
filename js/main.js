@@ -20,12 +20,12 @@ document.addEventListener('DOMContentLoaded', () => {
             categoryBubbles.forEach(b => b.classList.remove('active-category'));
             bubble.classList.add('active-category');
         
-            setTimeout(() => {
+            // setTimeout(() => {
                 loadPosts(bubble.dataset.category);
         
                 // Restore scroll position
                 window.scrollTo(0, scrollPos);
-            }, 400);
+            // }, 400);
         });
         
     });
