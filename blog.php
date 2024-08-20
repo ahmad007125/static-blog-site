@@ -22,9 +22,9 @@
     <div class="container-fluid header-container bg-blue p-0" id="header">
         <div class="container">
             <div class="header navigation-bar d-flex justify-content-between align-items-center">
-                <div class="logo">Design<strong>Source</strong></div>
+                <div class="logo"><a href="index.php" class="link d-block">Design<strong>Source</strong></a></div>
                 <ul class="centered-nav d-flex align-items-center gap-lg-5 gap-md-4 gap-3 mb-0 ps-0 py-1 py-md-0 justify-content-md-center justify-content-around">
-                    <li><a href="#" class="link">Home</a></li><span class="y-divider d-md-none d-block"></span>
+                    <li><a href="index.php" class="link">Home</a></li><span class="y-divider d-md-none d-block"></span>
                     <li><a href="#" class="link">Designs</a></li><span class="y-divider d-md-none d-block"></span>
                     <li><a href="blog.php" class="link">Blog</a></li><span class="y-divider d-md-none d-block"></span>
                     <li><a href="#" class="link">About</a></li>
