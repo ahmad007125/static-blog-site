@@ -1,6 +1,6 @@
 #posts {
   opacity: 1;
-  transition: opacity 0.3s ease-in-out; /* Adjust timing as needed */
+  transition: opacity 0.1s ease-in-out; /* Adjust timing as needed */
   min-height: 496.33px;
 }
 .hidden {
@@ -257,7 +257,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 20px 0;
 }
 .banner-heading {
-  font-size: 64px;
+  font-size: 40px;
 }
 .banner-area {
   padding-bottom: 100px;

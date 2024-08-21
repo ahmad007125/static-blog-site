@@ -43,10 +43,13 @@
         <div class="container">
             <div class="row banner-area align-items-center">
                 <div class="col-md-6 col-xs-12 captions-col">
-                    <p class="font-sm text-green text-uppercase">READY FOR RESUME</p>
-                    <h1 class="banner-heading text-white mb-4">Design Your <br>Career Story</h1>
-                    <p class="font-sm text-white mb-5">Experience the pinnacle of elegance and professionalism with our world-class design options. Tailored to impress and captivate, our templates cater to diverse tastes. Our dedicated design team ensures your resume shines with unparalleled aesthetics.</p>
-                    <a href="resume.php" class="btn btn-success rounded">Create CV</a>
+                    <p class="font-sm text-green text-uppercase">READY FOR DESIGNS</p>
+                    <h1 class="banner-heading text-white mb-4">Empower Your Creativity with Free Design Tools</h1>
+                    <p class="font-sm text-white mb-5">Welcome to FreeDesignPartner.com, your go-to resource for free, professional-grade design tools. Whether you're crafting a standout resume, designing a business card, or creating eye-catching flyers, we've got you covered. Our easy-to-use tools and high-quality templates are designed to help you create with confidence.</p>
+                    <div class="cta-btns">
+                        <a href="resume.php" class="btn btn-success rounded me-2">Design Tools</a>
+                        <a href="resume.php" class="btn btn-success rounded">Create CV</a>
+                    </div>
                 </div>
                 <div class="col-md-6 col-xs-12 img-col">
                     <img src="images/banner-img.svg" class="img-fluid banner-img" alt="loading..." width="" height="">
@@ -60,22 +63,22 @@
                 <div class="col-md-4">
                     <a href="#freeResume" class="link text-white scroll-link">
                         <svg class="icon mb-2" fill="none" height="30" viewBox="0 0 20 20" width="30" xmlns="http://www.w3.org/2000/svg"><path d="M9.51562 6C9.23948 6 9.01562 6.22386 9.01562 6.5C9.01562 6.77614 9.23948 7 9.51562 7H12.2929L8.14645 11.1464C7.95118 11.3417 7.95118 11.6583 8.14645 11.8536C8.34171 12.0488 8.65829 12.0488 8.85355 11.8536L13 7.70711V10.4844C13 10.7605 13.2239 10.9844 13.5 10.9844C13.7761 10.9844 14 10.7605 14 10.4844V6.5C14 6.22386 13.7761 6 13.5 6H9.51562Z" fill="#fff"/><path d="M12.7656 17C14.0136 17 15.0481 16.0855 15.2354 14.8901C16.2572 14.5761 17 13.6248 17 12.5V5.5C17 4.11929 15.8807 3 14.5 3H7.5C6.36321 3 5.40363 3.75875 5.10007 4.79744C3.90947 4.98887 3 6.02104 3 7.26562V13.5C3 15.433 4.567 17 6.5 17H12.7656ZM4 7.26562C4 6.61252 4.4174 6.0569 5 5.85098V12.5C5 13.8807 6.11929 15 7.5 15H14.1803C13.9744 15.5826 13.4187 16 12.7656 16H6.5C5.11929 16 4 14.8807 4 13.5V7.26562ZM7.5 4H14.5C15.3284 4 16 4.67157 16 5.5V12.5C16 13.3284 15.3284 14 14.5 14H7.5C6.67157 14 6 13.3284 6 12.5V5.5C6 4.67157 6.67157 4 7.5 4Z" fill="#fff"/></svg>
-                        <h4 class="heading">Create a free resume:</h4>
-                        <p class="line-bottom">Craft your professional story effortlessly with our intuitive resume builder, tailored to suit your unique career journey. Build your perfect resume in minutes.</p>
+                        <h4 class="heading">Resume Builder</h4>
+                        <p class="line-bottom">Build a professional resume quickly and easily with our online tool. Customize your template, highlight your skills, and land your dream job.</p>
                     </a>
                 </div>
                 <div class="col-md-4">
                     <a href="#qualityQuantity" class="link text-white scroll-link">
                         <svg class="icon mb-2" fill="none" height="30" viewBox="0 0 20 20" width="30" xmlns="http://www.w3.org/2000/svg"><path d="M9.51562 6C9.23948 6 9.01562 6.22386 9.01562 6.5C9.01562 6.77614 9.23948 7 9.51562 7H12.2929L8.14645 11.1464C7.95118 11.3417 7.95118 11.6583 8.14645 11.8536C8.34171 12.0488 8.65829 12.0488 8.85355 11.8536L13 7.70711V10.4844C13 10.7605 13.2239 10.9844 13.5 10.9844C13.7761 10.9844 14 10.7605 14 10.4844V6.5C14 6.22386 13.7761 6 13.5 6H9.51562Z" fill="#fff"/><path d="M12.7656 17C14.0136 17 15.0481 16.0855 15.2354 14.8901C16.2572 14.5761 17 13.6248 17 12.5V5.5C17 4.11929 15.8807 3 14.5 3H7.5C6.36321 3 5.40363 3.75875 5.10007 4.79744C3.90947 4.98887 3 6.02104 3 7.26562V13.5C3 15.433 4.567 17 6.5 17H12.7656ZM4 7.26562C4 6.61252 4.4174 6.0569 5 5.85098V12.5C5 13.8807 6.11929 15 7.5 15H14.1803C13.9744 15.5826 13.4187 16 12.7656 16H6.5C5.11929 16 4 14.8807 4 13.5V7.26562ZM7.5 4H14.5C15.3284 4 16 4.67157 16 5.5V12.5C16 13.3284 15.3284 14 14.5 14H7.5C6.67157 14 6 13.3284 6 12.5V5.5C6 4.67157 6.67157 4 7.5 4Z" fill="#fff"/></svg>
-                        <h4 class="heading">Quality Over Quantity:</h4>
-                        <p class="line-bottom">At our resume maker, we prioritize quality over quantity, ensuring that every aspect of your resume reflects your true potential.</p>
+                        <h4 class="heading">Graphic Design</h4>
+                        <p class="line-bottom">Our graphic design service delivers visually stunning and effective designs. Browse our blog, articles, and design resources for more inspiration.</p>
                     </a>
                 </div>
                 <div class="col-md-4">
                     <a href="#customization" class="link text-white scroll-link">
                         <svg class="icon mb-2" fill="none" height="30" viewBox="0 0 20 20" width="30" xmlns="http://www.w3.org/2000/svg"><path d="M9.51562 6C9.23948 6 9.01562 6.22386 9.01562 6.5C9.01562 6.77614 9.23948 7 9.51562 7H12.2929L8.14645 11.1464C7.95118 11.3417 7.95118 11.6583 8.14645 11.8536C8.34171 12.0488 8.65829 12.0488 8.85355 11.8536L13 7.70711V10.4844C13 10.7605 13.2239 10.9844 13.5 10.9844C13.7761 10.9844 14 10.7605 14 10.4844V6.5C14 6.22386 13.7761 6 13.5 6H9.51562Z" fill="#fff"/><path d="M12.7656 17C14.0136 17 15.0481 16.0855 15.2354 14.8901C16.2572 14.5761 17 13.6248 17 12.5V5.5C17 4.11929 15.8807 3 14.5 3H7.5C6.36321 3 5.40363 3.75875 5.10007 4.79744C3.90947 4.98887 3 6.02104 3 7.26562V13.5C3 15.433 4.567 17 6.5 17H12.7656ZM4 7.26562C4 6.61252 4.4174 6.0569 5 5.85098V12.5C5 13.8807 6.11929 15 7.5 15H14.1803C13.9744 15.5826 13.4187 16 12.7656 16H6.5C5.11929 16 4 14.8807 4 13.5V7.26562ZM7.5 4H14.5C15.3284 4 16 4.67157 16 5.5V12.5C16 13.3284 15.3284 14 14.5 14H7.5C6.67157 14 6 13.3284 6 12.5V5.5C6 4.67157 6.67157 4 7.5 4Z" fill="#fff"/></svg>
-                        <h4 class="heading">Customization Options:</h4>
-                        <p class="line-bottom">With our flexible customization tools, unleash your creativity and design a resume that speaks volumes about your personality and skills.</p>
+                        <h4 class="heading">Web Design</h4>
+                        <p class="line-bottom">Our web design service creates user-friendly, attractive websites. Check out our blog, articles, and frontend components for more insights.</p>
                     </a>
                 </div>
             </div>
@@ -88,7 +91,7 @@
                 <div class="col-md-6 col-xs-12 captions-col">
                     <h1 class="text-dark mb-3 mb-md-4">Unlock your <span class="text-green"> career</span> potential with our 
                     intuitive <span class="text-green">resume builder</span>.</h1>
-                    <p class="font-sm text-dark mb-0">Craft your professional story effortlessly with our user-friendly tool, tailored to your unique career journey. Build your perfect resume in minutes, completely free of charge, and take the next step towards your dream job.</p>
+                    <p class="font-sm text-dark mb-0">Our resume builder provides a single, ATS-friendly template that highlights your skills and experience with professionalism. Enter your details, and download a polished, effective resume designed to make a strong impression.</p>
                 </div>
                 <div class="col-md-6 col-sm-12 img-card bg-green">
                     <svg width="530" height="250" viewBox="0 0 530 313" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -125,7 +128,7 @@
                     </svg>
                 </div>
             </div>
-            <h1 class="section-heading text-center text-dark" id="qualityQuantity">Quality Over Quantity</h1>
+            <h1 class="section-heading text-center text-dark" id="qualityQuantity">Graphic Design Components</h1>
             <div class="row align-items-center gap-4 gap-md-5 flex-wrap flex-md-nowrap row-grids">
                 <div class="col-md-6 col-sm-12 img-card bg-green">
                     <svg width="489" height="250" viewBox="0 0 489 258" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -153,17 +156,17 @@
                     </svg>
                 </div>
                 <div class="col-md-6 col-xs-12 captions-col">
-                    <h1 class="text-dark mb-3 mb-md-4">Unlock your <span class="text-green"> career</span> potential with our 
-                    intuitive <span class="text-green">resume builder</span>.</h1>
-                    <p class="font-sm text-dark mb-0">Craft your professional story effortlessly with our user-friendly tool, tailored to your unique career journey. Build your perfect resume in minutes, completely free of charge, and take the next step towards your dream job.</p>
+                    <h1 class="text-dark mb-3 mb-md-4">Design<span class="text-green"> Tools</span> for Every Need
+                    and <span class="text-green">Project Requirement</span>.</h1>
+                    <p class="font-sm text-dark mb-0">From business cards to cover letters, flyers to brochures, our collection of design tools is tailored to meet all your professional needs. Each tool comes with a range of templates that are easy to customize.</p>
                 </div>
             </div>
-            <h1 class="section-heading text-center text-dark" id="customization">Customization Options</h1>
+            <h1 class="section-heading text-center text-dark" id="customization">Web Design Components</h1>
             <div class="row align-items-center gap-4 gap-md-5 flex-wrap-reverse flex-md-nowrap row-grids">
                 <div class="col-md-6 col-xs-12 captions-col">
-                    <h1 class="text-dark mb-3 mb-md-4">Unlock your <span class="text-green"> career</span> potential with our 
-                    intuitive <span class="text-green">resume builder</span>.</h1>
-                    <p class="font-sm text-dark mb-0">Craft your professional story effortlessly with our user-friendly tool, tailored to your unique career journey. Build your perfect resume in minutes, completely free of charge, and take the next step towards your dream job.</p>
+                    <h1 class="text-dark mb-3 mb-md-4">Key <span class="text-green"> Web</span> design components for 
+                    building effective <span class="text-green">online experiences</span>.</h1>
+                    <p class="font-sm text-dark mb-0">Explore essential elements like intuitive navigation, responsive layouts, and engaging visuals. These components are crucial for creating user-friendly websites that offer a seamless browsing experience and enhance your online presence.</p>
                 </div>
                 <div class="col-md-6 col-sm-12 img-card bg-green">
                     <svg width="381" height="250" viewBox="0 0 381 289" fill="none" xmlns="http://www.w3.org/2000/svg">

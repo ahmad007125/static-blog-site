@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 // Fade posts container back in after content is updated
                 postsContainer.style.opacity = '1';
-            }, 300); // Match this duration with the CSS transition duration
+            }, 100); // Match this duration with the CSS transition duration
         });
     });
 
