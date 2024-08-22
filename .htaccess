@@ -1,0 +1,14 @@
+# Enable mod_rewrite
+RewriteEngine On
+
+# Rule to remove .php extension
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.*)$ $1.php [L,QSA]
+
+# Rule to hide .html extension in the query string
+RewriteCond %{QUERY_STRING} ^post=(.*)\.html$
+RewriteRule ^single$ single?post=%1 [L,R=301]
+
+# Rule to internally rewrite URLs without .html extension back to the original file
+RewriteRule ^single$ single.php [L]

@@ -1,22 +1,11 @@
-<!-- <div class="post" data-category="category4">
-    <h2>Post 4 Title</h2>
-    Insert the file name with extention at the end of the file
-    <a href="single.php?post=post4.html">Read More</a>
-    Full content for single post page
-    <div class="full-content">
-        <p>This is the content of the third post.This is the content of the third post.This is the content of the third post.This is the content of the third post.This is the content of the third post.This is the content of the third post.This is the content of the third post.This is the content of the third post.This is the content of the third post.This is the content of the third post.</p>
-    </div>
-</div> -->
-
-
-
-
 <div class="post card-post col-lg-4 col-md-4 col-sm-6 col-xs-12" data-category="category4">
-    <div class="card main-blog-card p-4">
+    <!-- Short post view -->
+    <div class="card main-blog-card main-blog p-4">
+        <img src="images/blog-banner.webp" class="card-img-top" alt="loading...">
         <div class="card-body p-0">
             <h5 class="card-title">Post 4</h5>
             <p class="card-text">This is a brief excerpt from the post content. It gives readers a taste of what's inside...</p>
-            <a href="single.php?post=post4.html" class="btn btn-link p-0">
+            <a href="single.php?post=post4.php" class="btn btn-link p-0">
                 Read more
                 <span class="ms-1">
                     <!-- SVG Icon -->
@@ -26,6 +15,9 @@
                 </span>
             </a>
         </div>
-        <!-- <img src="upload/blog/sample-image-1.jpg" class="card-img-top" alt="..."> -->
+    </div>
+    <!-- Long post view -->
+    <div class="single-post-data">
+        <p>Lorem ipsum dolor sit amit is a dummy text</p>
     </div>
 </div>

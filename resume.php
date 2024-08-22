@@ -11,12 +11,10 @@
     
     <!-- bootstrap.min css -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
-    <!-- Icofont Css -->
-    <!-- <link rel="stylesheet" href="plugins/fontawesome/css/all.css"> -->
-    <!-- animate.css -->
-    <link rel="stylesheet" href="plugins/animate-css/animate.css">
-    <!-- Icofont -->
-    <!-- <link rel="stylesheet" href="plugins/icofont/icofont.css"> -->
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
     <!-- Main Stylesheet -->
     <link rel="stylesheet" href="css/styles.css">
@@ -31,9 +29,9 @@
 <div class="container-fluid header-container bg-blue p-0" id="header">
     <div class="container">
         <div class="header navigation-bar d-flex justify-content-between align-items-center">
-            <div class="logo">Design<strong>Source</strong></div>
+            <div class="logo"><a href="index.php" class="link d-block">Design<strong>Source</strong></a></div>
             <ul class="centered-nav d-flex align-items-center gap-lg-5 gap-md-4 gap-3 mb-0 ps-0 py-1 py-md-0 justify-content-md-center justify-content-around">
-                <li><a href="#" class="link">Home</a></li><span class="y-divider d-md-none d-block"></span>
+                <li><a href="index.php" class="link">Home</a></li><span class="y-divider d-md-none d-block"></span>
                 <li><a href="#" class="link">Designs</a></li><span class="y-divider d-md-none d-block"></span>
                 <li><a href="blog.php" class="link">Blog</a></li><span class="y-divider d-md-none d-block"></span>
                 <li><a href="#" class="link">About</a></li>
@@ -99,7 +97,7 @@
               <div class="container resume-container p-0" style="display: flex; padding-right: 0;">
                 <div class="left-side" style="padding: 30px 20px; background-color: #e3f2fd; width: 25%; min-width: 200px;">
                     <div id="imageContainer" class="img" style="width: 100%; height: 200px; overflow: hidden;">
-                      <img id="defaultImage" src="images/profile-basic.jpg" alt="profile img" style="width: 100%; height: 100%; object-fit: cover; object-position: top center; display: none;">
+                      <img id="defaultImage" src="images/profile-basic.jpg" alt="profile img" style="width: 100%; height: 100%; object-fit: cover; object-position: top center; display: none;" alt="loading...">
                     </div>
 
                     <!-- Contact section -->
