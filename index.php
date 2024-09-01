@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="eng">
+<html lang="en-US">
 <head>
 	<meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -7,15 +7,22 @@
     <meta name="keywords" content="marketing,digital marketing,creative, agency, startup,promodise,onepage, clean, modern,seo,business, company">
 	<title>Free Designs Source</title>
 
-    <!-- bootstrap.min css -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
 
     <!-- Main Stylesheet -->
     <link rel="stylesheet" href="css/styles.css">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+    <!-- Preload Google Fonts -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap"></noscript>
+
+    <!-- Favicon -->
+    <link rel="icon" href="https://img.icons8.com/plasticine/100/000000/cat.png" type="image/png">
+
 
     <!-- <link rel="stylesheet" href="plugins/fontawesome/css/all.css"> -->
     <!-- <link rel="stylesheet" href="plugins/animate-css/animate.css"> -->
@@ -30,9 +37,9 @@
             <div class="header navigation-bar d-flex justify-content-between align-items-center">
                 <div class="logo"><a href="index.php" class="link d-block">Design<strong>Source</strong></a></div>
                 <ul class="centered-nav d-flex align-items-center gap-lg-5 gap-md-4 gap-3 mb-0 ps-0 py-1 py-md-0 justify-content-md-center justify-content-around">
-                    <li><a href="index.php" class="link">Home</a></li><span class="y-divider d-md-none d-block"></span>
-                    <li><a href="#" class="link">Designs</a></li><span class="y-divider d-md-none d-block"></span>
-                    <li><a href="blog.php" class="link">Blog</a></li><span class="y-divider d-md-none d-block"></span>
+                    <li><a href="index.php" class="link">Home</a></li><li style="display: contents;"><span class="y-divider d-md-none d-block"></span></li>
+                    <li><a href="#" class="link">Designs</a></li><li style="display: contents;"><span class="y-divider d-md-none d-block"></span></li>
+                    <li><a href="blog.php" class="link">Blog</a></li><li style="display: contents;"><span class="y-divider d-md-none d-block"></span></li>
                     <li><a href="#" class="link">About</a></li>
                 </ul>
                 <a href="resume.php" class="btn btn-success rounded">Create CV</a>
@@ -48,11 +55,11 @@
                     <p class="font-sm text-white mb-5">Welcome to FreeDesignPartner.com, your go-to resource for free, professional-grade design tools. Whether you're crafting a standout resume, designing a business card, or creating eye-catching flyers, we've got you covered. Our easy-to-use tools and high-quality templates are designed to help you create with confidence.</p>
                     <div class="cta-btns">
                         <a href="resume.php" class="btn btn-success rounded me-2">Design Tools</a>
-                        <a href="resume.php" class="btn btn-success rounded">Create CV</a>
+                        <a href="resume.php" class="btn btn-success light rounded">Create CV</a>
                     </div>
                 </div>
                 <div class="col-md-6 col-xs-12 img-col">
-                    <img src="images/banner-img.svg" class="img-fluid banner-img" alt="loading..." width="" height="">
+                    <img src="images/banner-img.svg" class="img-fluid banner-img" alt="loading..." width="600" height="600">
                 </div>
             </div>
         </div>
@@ -62,22 +69,25 @@
             <div class="row links-row gap-4 gap-md-2 flex-nowrap flex-column flex-md-row">
                 <div class="col-md-4">
                     <a href="#freeResume" class="link text-white scroll-link">
-                        <svg class="icon mb-2" fill="none" height="30" viewBox="0 0 20 20" width="30" xmlns="http://www.w3.org/2000/svg"><path d="M9.51562 6C9.23948 6 9.01562 6.22386 9.01562 6.5C9.01562 6.77614 9.23948 7 9.51562 7H12.2929L8.14645 11.1464C7.95118 11.3417 7.95118 11.6583 8.14645 11.8536C8.34171 12.0488 8.65829 12.0488 8.85355 11.8536L13 7.70711V10.4844C13 10.7605 13.2239 10.9844 13.5 10.9844C13.7761 10.9844 14 10.7605 14 10.4844V6.5C14 6.22386 13.7761 6 13.5 6H9.51562Z" fill="#fff"/><path d="M12.7656 17C14.0136 17 15.0481 16.0855 15.2354 14.8901C16.2572 14.5761 17 13.6248 17 12.5V5.5C17 4.11929 15.8807 3 14.5 3H7.5C6.36321 3 5.40363 3.75875 5.10007 4.79744C3.90947 4.98887 3 6.02104 3 7.26562V13.5C3 15.433 4.567 17 6.5 17H12.7656ZM4 7.26562C4 6.61252 4.4174 6.0569 5 5.85098V12.5C5 13.8807 6.11929 15 7.5 15H14.1803C13.9744 15.5826 13.4187 16 12.7656 16H6.5C5.11929 16 4 14.8807 4 13.5V7.26562ZM7.5 4H14.5C15.3284 4 16 4.67157 16 5.5V12.5C16 13.3284 15.3284 14 14.5 14H7.5C6.67157 14 6 13.3284 6 12.5V5.5C6 4.67157 6.67157 4 7.5 4Z" fill="#fff"/></svg>
-                        <h4 class="heading">Resume Builder</h4>
+                        <!-- <i class="ti ti-clipboard-text"></i> -->
+                        <svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="currentColor"><path d="M702.31-220v82.31q0 7.07 5.31 12.38Q712.92-120 720-120q7.08 0 12.38-5.31 5.31-5.31 5.31-12.38V-220H820q7.08 0 12.38-5.31 5.31-5.31 5.31-12.38 0-7.08-5.31-12.39-5.3-5.3-12.38-5.3h-82.31v-82.31q0-7.08-5.31-12.39-5.3-5.3-12.38-5.3-7.08 0-12.38 5.3-5.31 5.31-5.31 12.39v82.31H620q-7.08 0-12.38 5.3-5.31 5.31-5.31 12.39 0 7.07 5.31 12.38Q612.92-220 620-220h82.31Zm-490 80q-29.83 0-51.07-21.24Q140-182.48 140-212.31v-535.38q0-29.83 21.24-51.07Q182.48-820 212.31-820h535.38q29.83 0 51.07 21.24Q820-777.52 820-747.69v202.31q0 12.75-8.63 21.37-8.63 8.63-21.38 8.63-12.76 0-21.37-8.63-8.62-8.62-8.62-21.37v-202.31q0-4.62-3.85-8.46-3.84-3.85-8.46-3.85H212.31q-4.62 0-8.46 3.85-3.85 3.84-3.85 8.46v535.38q0 4.62 3.85 8.46 3.84 3.85 8.46 3.85h202.31q12.75 0 21.37 8.63 8.63 8.63 8.63 21.38 0 12.76-8.63 21.37-8.62 8.62-21.37 8.62H212.31ZM200-239.87V-200v-560 247.62-3 275.51Zm90-84.73q0 12.75 8.63 21.37 8.62 8.61 21.37 8.61h100.69q12.75 0 21.38-8.63 8.62-8.62 8.62-21.38 0-12.75-8.62-21.37-8.63-8.61-21.38-8.61H320q-12.75 0-21.37 8.62-8.63 8.63-8.63 21.39Zm0-155.39q0 12.76 8.63 21.37Q307.25-450 320-450h229.62q12.75 0 21.37-8.63 8.63-8.63 8.63-21.38 0-12.76-8.63-21.37-8.62-8.62-21.37-8.62H320q-12.75 0-21.37 8.63-8.63 8.63-8.63 21.38Zm0-155.38q0 12.75 8.63 21.37 8.62 8.61 21.37 8.61h320q12.75 0 21.37-8.62 8.63-8.63 8.63-21.39 0-12.75-8.63-21.37-8.62-8.61-21.37-8.61H320q-12.75 0-21.37 8.63-8.63 8.62-8.63 21.38ZM720-57.69q-74.92 0-127.46-52.54Q540-162.77 540-237.69q0-74.92 52.54-127.46 52.54-52.54 127.46-52.54 74.92 0 127.46 52.54Q900-312.61 900-237.69q0 74.92-52.54 127.46Q794.92-57.69 720-57.69Z"/></svg>
+                        <p class="heading fs-4 fw-600 mb-1">Resume Builder</p>
                         <p class="line-bottom">Build a professional resume quickly and easily with our online tool. Customize your template, highlight your skills, and land your dream job.</p>
                     </a>
                 </div>
                 <div class="col-md-4">
                     <a href="#qualityQuantity" class="link text-white scroll-link">
-                        <svg class="icon mb-2" fill="none" height="30" viewBox="0 0 20 20" width="30" xmlns="http://www.w3.org/2000/svg"><path d="M9.51562 6C9.23948 6 9.01562 6.22386 9.01562 6.5C9.01562 6.77614 9.23948 7 9.51562 7H12.2929L8.14645 11.1464C7.95118 11.3417 7.95118 11.6583 8.14645 11.8536C8.34171 12.0488 8.65829 12.0488 8.85355 11.8536L13 7.70711V10.4844C13 10.7605 13.2239 10.9844 13.5 10.9844C13.7761 10.9844 14 10.7605 14 10.4844V6.5C14 6.22386 13.7761 6 13.5 6H9.51562Z" fill="#fff"/><path d="M12.7656 17C14.0136 17 15.0481 16.0855 15.2354 14.8901C16.2572 14.5761 17 13.6248 17 12.5V5.5C17 4.11929 15.8807 3 14.5 3H7.5C6.36321 3 5.40363 3.75875 5.10007 4.79744C3.90947 4.98887 3 6.02104 3 7.26562V13.5C3 15.433 4.567 17 6.5 17H12.7656ZM4 7.26562C4 6.61252 4.4174 6.0569 5 5.85098V12.5C5 13.8807 6.11929 15 7.5 15H14.1803C13.9744 15.5826 13.4187 16 12.7656 16H6.5C5.11929 16 4 14.8807 4 13.5V7.26562ZM7.5 4H14.5C15.3284 4 16 4.67157 16 5.5V12.5C16 13.3284 15.3284 14 14.5 14H7.5C6.67157 14 6 13.3284 6 12.5V5.5C6 4.67157 6.67157 4 7.5 4Z" fill="#fff"/></svg>
-                        <h4 class="heading">Graphic Design</h4>
+                        <!-- <i class="ti ti-vector-bezier"></i> -->
+                        <svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="currentColor"><path d="m358.15-505.84 88.7-89.31-69.08-69.7-24.08 24.08q-8.31 8.31-20.58 8.81-12.26.5-21.57-8.81t-9.31-21.38q0-12.08 9.31-21.39L335-707l-61.54-61.54-89.31 89.31 174 173.39Zm320.7 321.3 89.3-89.31-61.54-61.54-24.07 23.47q-8.93 8.92-20.89 9.11-11.96.19-21.27-9.11-9.3-9.31-9.3-21.08 0-11.77 9.3-21.08l23.47-24.07-69.31-68.7-88.7 88.7 173.01 173.61ZM697.46-760l63.16 63.15L697.46-760Zm-521.3 620q-15.47 0-25.81-10.35Q140-160.69 140-176.16V-273q0-7.23 2.62-13.77 2.61-6.54 8.23-12.15l164.54-164.54-181.47-181.85Q120-659.23 120-679.23t13.92-33.92l105.62-105.62q13.92-13.92 33.92-13.61 20 .3 33.92 14.23l182.85 181.84 164.85-165.46q9.31-9.31 20.46-13.77 11.15-4.46 23.31-4.46 12.15 0 23.3 4.46 11.16 4.46 20.46 13.77l59.16 60.93q9.31 9.3 13.57 20.46 4.27 11.15 4.27 23.3 0 12.16-4.27 22.81-4.26 10.65-13.57 19.96L637.69-489.23l181.08 181.85q13.92 13.92 13.92 33.92t-13.92 33.92L713.15-133.92Q699.23-120 679.23-120t-33.92-13.92L463.46-315.39 298.92-150.85q-5.61 5.62-12.15 8.23Q280.23-140 273-140h-96.84ZM200-200h62.54l392.38-391.77-63.15-63.15L200-262.54V-200Zm423.85-423.23-32.08-31.69 63.15 63.15-31.07-31.46Z"/></svg>
+                        <p class="heading fs-4 fw-600 mb-1">Graphic Design</p>
                         <p class="line-bottom">Our graphic design service delivers visually stunning and effective designs. Browse our blog, articles, and design resources for more inspiration.</p>
                     </a>
                 </div>
                 <div class="col-md-4">
                     <a href="#customization" class="link text-white scroll-link">
-                        <svg class="icon mb-2" fill="none" height="30" viewBox="0 0 20 20" width="30" xmlns="http://www.w3.org/2000/svg"><path d="M9.51562 6C9.23948 6 9.01562 6.22386 9.01562 6.5C9.01562 6.77614 9.23948 7 9.51562 7H12.2929L8.14645 11.1464C7.95118 11.3417 7.95118 11.6583 8.14645 11.8536C8.34171 12.0488 8.65829 12.0488 8.85355 11.8536L13 7.70711V10.4844C13 10.7605 13.2239 10.9844 13.5 10.9844C13.7761 10.9844 14 10.7605 14 10.4844V6.5C14 6.22386 13.7761 6 13.5 6H9.51562Z" fill="#fff"/><path d="M12.7656 17C14.0136 17 15.0481 16.0855 15.2354 14.8901C16.2572 14.5761 17 13.6248 17 12.5V5.5C17 4.11929 15.8807 3 14.5 3H7.5C6.36321 3 5.40363 3.75875 5.10007 4.79744C3.90947 4.98887 3 6.02104 3 7.26562V13.5C3 15.433 4.567 17 6.5 17H12.7656ZM4 7.26562C4 6.61252 4.4174 6.0569 5 5.85098V12.5C5 13.8807 6.11929 15 7.5 15H14.1803C13.9744 15.5826 13.4187 16 12.7656 16H6.5C5.11929 16 4 14.8807 4 13.5V7.26562ZM7.5 4H14.5C15.3284 4 16 4.67157 16 5.5V12.5C16 13.3284 15.3284 14 14.5 14H7.5C6.67157 14 6 13.3284 6 12.5V5.5C6 4.67157 6.67157 4 7.5 4Z" fill="#fff"/></svg>
-                        <h4 class="heading">Web Design</h4>
+                        <!-- <i class="ti ti-world-upload"></i> -->
+                        <svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="currentColor"><path d="M700-217.23V-144q0 12.77-8.62 21.38Q682.77-114 670-114t-21.38-8.62Q640-131.23 640-144v-127.54q0-20.38 14.04-34.42Q668.08-320 688.46-320H816q12.77 0 21.38 8.62Q846-302.77 846-290t-8.62 21.38Q828.77-260 816-260h-74.23l107.31 107.31q8.3 8.3 8.3 20.57t-8.3 21.2q-8.93 9.3-21.39 9.11-12.46-.19-21.38-9.11L700-217.23ZM480-100q-78.77 0-148.11-29.96-69.35-29.96-120.66-81.27-51.31-51.31-81.27-120.66Q100-401.23 100-480q0-78.77 29.96-148.11 29.96-69.35 81.27-120.66 51.31-51.31 120.66-81.27Q401.23-860 480-860q78.77 0 148.11 29.96 69.35 29.96 120.66 81.27 51.31 51.31 81.27 120.66Q860-558.77 860-480q0 10.38-.5 22.38-.5 12-1.89 22.39-1.61 12.77-10.73 20.15-9.11 7.39-22.5 7.39-11.77 0-20.07-10.16-8.31-10.15-6.69-22.3 2-10.39 2.19-19.93.19-9.54.19-19.92 0-21.92-2.88-43.65-2.89-21.74-9.04-43.27h-148.7q3.77 21.53 5.47 43.27 1.69 21.73 1.69 43.65 0 10.38-.19 22.08-.2 11.69-1.2 22.07-1.61 12.77-10.54 20.46-8.92 7.7-21.69 7.7-11.77 0-20.57-9.54-8.81-9.54-7.2-21.69 1-10.39 1.2-20.54.19-10.16.19-20.54 0-21.92-1.69-43.65-1.7-21.74-5.46-43.27H380.61q-3.76 21.53-5.46 43.27-1.69 21.73-1.69 43.65 0 21.92 1.69 43.65 1.7 21.74 5.46 43.27h117.08q12.77 0 21.39 8.62 8.61 8.61 8.61 21.38t-8.61 21.39q-8.62 8.61-21.39 8.61H394.38q13.16 47.23 34.27 90.58 21.12 43.35 51.35 81.65 10.77 0 21.54.12 10.77.11 21.15-1.27 12.39-1.62 20.69 6.38 8.31 8 8.31 20.39 0 13.38-6.88 22.31-6.89 8.92-19.66 10.53-10.38 1.39-22.38 1.89-12 .5-22.77.5ZM171.92-393.08h148.7q-3.77-21.53-5.47-43.27-1.69-21.73-1.69-43.65 0-21.92 1.69-43.65 1.7-21.74 5.47-43.27h-148.7q-6.15 21.53-9.04 43.27Q160-501.92 160-480q0 21.92 2.88 43.65 2.89 21.74 9.04 43.27Zm230.62 222q-24.15-37.46-41.5-78.15-17.35-40.69-28.27-83.85H197.08q31.3 61.77 84.92 104.23 53.62 42.47 120.54 57.77ZM197.08-626.92h135.69q10.15-43.54 27.31-84.23 17.15-40.7 42.46-77.77-67.31 14.92-120.73 57.38-53.43 42.46-84.73 104.62Zm197.3 0h171.24q-12.77-47.23-34.47-90.19-21.69-42.97-51.15-82.04-29.85 38.3-51.35 81.65-21.5 43.35-34.27 90.58Zm232.85 0h135.69q-31.3-62.16-84.73-104.81-53.42-42.66-120.73-57.19 24.15 37.46 40.92 78.34 16.77 40.89 28.85 83.66Z"/></svg>
+                        <p class="heading fs-4 fw-600 mb-1">Web Design</p>
                         <p class="line-bottom">Our web design service creates user-friendly, attractive websites. Check out our blog, articles, and frontend components for more insights.</p>
                     </a>
                 </div>
@@ -226,7 +236,7 @@
                     <a href="resume.php" class="btn btn-success rounded">Create CV</a>
                 </div>
                 <div class="col-sm-6 col-xs-12 img-col">
-                    <img src="images/cv-templates.webp" class="img-fluid" alt="loading..." width="" height="">
+                    <img src="images/cv-templates.webp" class="img-fluid" alt="loading..." width="600" height="600" loading="lazy">
                 </div>
             </div>
         </div>
@@ -234,35 +244,106 @@
     <div class="container-fluid fifth-container faq-container px-0">
         <div class="container">
             <div class="accordion mw-767 mx-auto" id="accordionExample">
-                <h1 class="section-heading text-center text-dark">Frequently Asked Questions</h1>
+                <h1 class="section-heading text-center text-dark mb-3">FAQs</h1>
+                <p class="font-sm text-dark text-center mb-5">Empowering Your Career Growth: Expert FAQs Tailored to Guide Your Success<br>Start Your Journey with Confidence Today.</p>
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="headingOne">
                       <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                        Accordion Item #1
+                        What services do you offer?
                       </button>
                     </h2>
                     <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                        <div class="accordion-body"> <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow. </div>
+                        <div class="accordion-body">We offer free graphic design components, web design components, and a resume builder. Additionally, we provide informative blog posts on various topics.</div>
                     </div>
                 </div>
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="headingTwo">
                       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                        Accordion Item #2
+                        Do I need to sign up to access your services?
                       </button>
                     </h2>
                     <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                        <div class="accordion-body"> <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow. </div>
+                        <div class="accordion-body">No, you can access and use all our services without signing up. Everything is available for free.</div>
                     </div>
                 </div>
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="headingThree">
                       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                        Accordion Item #3
+                        Are the resources on your website really free?
                       </button>
                     </h2>
                     <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                        <div class="accordion-body"> <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow. </div>
+                        <div class="accordion-body">Yes, all the resources on our website, including graphic and web design components, as well as the resume builder, are completely free to use.</div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFour">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
+                        Can I use your design components for commercial projects?
+                      </button>
+                    </h2>
+                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">Yes, you can use our design components for both personal and commercial projects. design components for both personal and commercial projects.</div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFive">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseThree">
+                      How often do you update your blog?
+                      </button>
+                    </h2>
+                    <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">We regularly update our blog on our website, including graphic and web design components, as well as the resume builder, are completely free to use.</div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingSix">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                      Can I download the design components?
+                      </button>
+                    </h2>
+                    <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">Yes, all our design components are available for download so you can use them in your projects.</div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingSeven">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                      Do you offer customer support?
+                      </button>
+                    </h2>
+                    <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">While we don’t offer personalized support, our blog and FAQ section cover most common questions. Feel free to explore them for help.</div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingEight">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                      Is the resume builder easy to use?
+                      </button>
+                    </h2>
+                    <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">Absolutely! Our resume builder is designed to be user-friendly, with simple steps to create a professional resume.</div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingNine">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                      Do you plan to introduce paid services in the future?
+                      </button>
+                    </h2>
+                    <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingNine" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">Currently, all our services are free. If we introduce paid services, we will inform our users in advance.</div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTen">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+                      How can I stay updated on new resources?
+                      </button>
+                    </h2>
+                    <div id="collapseTen" class="accordion-collapse collapse" aria-labelledby="headingTen" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">You can subscribe to our newsletter or follow our blog to stay informed about new resources and updates.</div>
                     </div>
                 </div>
             </div>
@@ -298,8 +379,8 @@
     <!-- <script src="plugins/bootstrap/js/popper.min.js"></script> -->
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
 
     <!-- Woow animtaion -->

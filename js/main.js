@@ -120,17 +120,27 @@ function loadSinglePost() {
     });
 
     // Change header color on scroll
+
+    // window.addEventListener('scroll', function () {
+    //     if (window.scrollY > 70) {
+    //         document.querySelectorAll('.site-navigation, .trans-navigation').forEach(function(nav) {
+    //             nav.classList.add('header-white');
+    //         });
+    //     } else {
+    //         document.querySelectorAll('.site-navigation, .trans-navigation').forEach(function(nav) {
+    //             nav.classList.remove('header-white');
+    //         });
+    //     }
+    // });
+
     window.addEventListener('scroll', function () {
-        if (window.scrollY > 70) {
-            document.querySelectorAll('.site-navigation, .trans-navigation').forEach(function(nav) {
-                nav.classList.add('header-white');
-            });
-        } else {
-            document.querySelectorAll('.site-navigation, .trans-navigation').forEach(function(nav) {
-                nav.classList.remove('header-white');
+        if (window.scrollY > 100) {
+            document.querySelectorAll('.fourth-container, .fifth-container, .sixth-container, .seventh-container').forEach(function(section) {
+                section.classList.add('d-block');
             });
         }
     });
+    
 
 })();
 
@@ -206,16 +216,16 @@ document.addEventListener('DOMContentLoaded', function() {
     };
      
 
-    function copyCode() {
-        // Create a temporary textarea element
-        var textarea = document.createElement("textarea");
-        textarea.value = document.querySelector(".code-container code").innerText;
-        document.body.appendChild(textarea);
-        textarea.select();
-        document.execCommand("copy");
-        document.body.removeChild(textarea);
-        alert("Code copied to clipboard!");
-    }
+    // Create a temporary textarea element
+    // function copyCode() {
+    //     var textarea = document.createElement("textarea");
+    //     textarea.value = document.querySelector(".code-container code").innerText;
+    //     document.body.appendChild(textarea);
+    //     textarea.select();
+    //     document.execCommand("copy");
+    //     document.body.removeChild(textarea);
+    //     alert("Code copied to clipboard!");
+    // }
 
 
 

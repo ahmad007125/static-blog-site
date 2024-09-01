@@ -85,7 +85,7 @@
                     <div class="col-12 form-group">
                         <textarea name="summary" class="form-control" rows="1" placeholder="Professional summary" required></textarea>
                     </div>
-                    <div class="col-12 d-flex align-items-center justify-content-between gap-2 gap-md-3 px-0">
+                    <div class="col-12 d-flex align-items-center justify-content-between gap-2 gap-md-3">
                         <a class="btn btn-success rounded" id="saveBtn" onclick="printSection()">Download</a>
                     </div>
                 </div>
